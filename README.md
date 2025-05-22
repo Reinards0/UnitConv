@@ -1,5 +1,5 @@
 # Unit Converter in HTML
-This is my attempt to build a unit converter using HTML, CSS, and JavaScript.  
+This is my attempt to build a unit converter using HTML, ~~CSS~~, and JavaScript.  
 <br>
 ## How to use
 Open the HTML File.  
