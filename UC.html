@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="UC.css">
+    <script src="UC.js"></script>
+</head>
+<body>
+    <h1>Unit Converter</h1>
+    <p>Welcome to Unit Converter!</p>
+    <br>
+    <h3>Temperature Converter</h3>
+    <input type="text" name="val" id="i1" oninput="convdn(0)">
+    <select name="unit" id="u1" onchange="convup(0)">
+        <option value="0">Celcius (&#176C)</option>
+        <option value="1">Fahrenheit (&#176F)</option>
+        <option value="2">Kelvin (&#176K)</option>
+        <option value="3">Reaumur (&#176R)</option>
+        <!-- <option value="3">Rankine (&#176R)</option> -->
+    </select>
+    <br><br>
+    <input type="text" name="val" id="i2" oninput="convup(0)">
+    <select name="unit" id="u2" onchange="convdn(0)">
+        <option value="0">Celcius (&#176C)</option>
+        <option value="1">Fahrenheit (&#176F)</option>
+        <option value="2">Kelvin (&#176K)</option>
+        <option value="3">Reaumur (&#176R)</option>
+        <!-- <option value="3">Rankine (&#176R)</option> -->
+    </select>
+    <br><br>
+    <br>
+    <h3>Length Converter</h3>
+    <input type="text" name="val" id="i3" oninput="convdn(1)">
+    <select name="unit" id="u3" onchange="convup(1)">
+        <option value="0">Kilometer (Km)</option>
+        <option value="1">Hectometer (Hm)</option>
+        <option value="2">Dekameter (Dam)</option>
+        <option value="3">Meter (M)</option>
+        <option value="4">Decimeter (Dm)</option>
+        <option value="5">Centimeter (Cm)</option>
+        <option value="6">Milimeter (Mm)</option>
+        <option value="7">Inch (In)</option>
+        <option value="8">Feet (Ft)</option>
+        <option value="9">Yard (Y)</option>
+    </select>
+    <br><br>
+    <input type="text" name="val" id="i4" oninput="convup(1)">
+    <select name="unit" id="u4" onchange="convdn(1)">
+        <option value="0">Kilometer (Km)</option>
+        <option value="1">Hectometer (Hm)</option>
+        <option value="2">Dekameter (Dam)</option>
+        <option value="3">Meter (M)</option>
+        <option value="4">Decimeter (Dm)</option>
+        <option value="5">Centimeter (Cm)</option>
+        <option value="6">Milimeter (Mm)</option>
+        <option value="7">Inch (In)</option>
+        <option value="8">Feet (Ft)</option>
+        <option value="9">Yard (Y)</option>
+    </select>
+    <br><br>
+    <br>
+    <h3>Weight Converter</h3>
+    <input type="text" name="val" id="i5" oninput="convdn(2)">
+    <select name="unit" id="u5" onchange="convup(2)">
+        <option value="0">Kilogram (Kg)</option>
+        <option value="1">Hectogram (Hg)</option>
+        <option value="2">Dekagram (Dag)</option>
+        <option value="3">Gram (G)</option>
+        <option value="4">Decigram (Dg)</option>
+        <option value="5">Centigram (Cg)</option>
+        <option value="6">Miligram (Mg)</option>
+        <option value="7">Ounce (Oz)</option>
+        <option value="8">Pound (lbs)</option>
+        <option value="9">Ton (t)</option>
+    </select>
+    <br><br>
+    <input type="text" name="val" id="i6" oninput="convup(2)">
+    <select name="unit" id="u6" onchange="convdn(2)">
+        <option value="0">Kilogram (Kg)</option>
+        <option value="1">Hectogram (Hg)</option>
+        <option value="2">Dekagram (Dag)</option>
+        <option value="3">Gram (G)</option>
+        <option value="4">Decigram (Dg)</option>
+        <option value="5">Centigram (Cg)</option>
+        <option value="6">Miligram (Mg)</option>
+        <option value="7">Ounce (Oz)</option>
+        <option value="8">Pound (lbs)</option>
+        <option value="9">Ton (t)</option>
+    </select>
+    <br><br>
+    <br>
+    <h3>Data Converter</h3>
+    <input type="text" name="val" id="i7" oninput="convdn(3)">
+    <select name="unit" id="u7" onchange="convup(3)">
+        <option value="0">Byte (B)</option>
+        <option value="1">Kilobyte (KB)</option>
+        <option value="2">Megabyte (MB)</option>
+        <option value="3">Gigabyte (GB)</option>
+        <option value="4">Terabyte (TB)</option>
+        <!-- <option value="5">Petabyte (PB)</option> -->
+        <!-- <option value="6">Exabyte (EB)</option> -->
+        <!-- <option value="7">Zettabyte (ZB)</option> -->
+    </select>
+    <br><br>
+    <input type="text" name="val" id="i8" oninput="convup(3)">
+    <select name="unit" id="u8" onchange="convdn(3)">
+        <option value="0">Byte (B)</option>
+        <option value="1">Kilobyte (KB)</option>
+        <option value="2">Megabyte (MB)</option>
+        <option value="3">Gigabyte (GB)</option>
+        <option value="4">Terabyte (TB)</option>
+        <!-- <option value="5">Petabyte (PB)</option> -->
+        <!-- <option value="6">Exabyte (EB)</option> -->
+        <!-- <option value="7">Zettabyte (ZB)</option> -->
+    </select>
+    <br><br><!--
+    <br>
+    <h3>Number Converter</h3>
+    <input type="text" name="val" id="i9" oninput="convdn(4)">
+    <select name="unit" id="u9" onchange="convup(4)">
+        <option value="0">Null</option>
+        <option value="1">Characters (1)</option>
+        <option value="2">Binary (2)</option>
+        <option value="3">Base (3)</option>
+        <option value="4">Base (4)</option>
+        <option value="5">Base (5)</option>
+        <option value="6">Base (6)</option>
+        <option value="7">Base (7)</option>
+        <option value="8">Octal (8)</option>
+        <option value="9">Base (9)</option>
+        <option value="10">Decimal (10)</option>
+        <option value="11">Base (11)</option>
+        <option value="12">Base (12)</option>
+        <option value="13">Base (13)</option>
+        <option value="14">Base (14)</option>
+        <option value="15">Base (15)</option>
+        <option value="16">Hexadecimal (16)</option>
+        <option value="17">Base (17)</option>
+        <option value="18">Base (18)</option>
+        <option value="19">Base (19)</option>
+        <option value="20">Base (20)</option>
+        <option value="21">Base (21)</option>
+        <option value="22">Base (22)</option>
+        <option value="23">Base (23)</option>
+        <option value="24">Base (24)</option>
+        <option value="25">Base (25)</option>
+        <option value="26">Base (26)</option>
+        <option value="27">Base (27)</option>
+        <option value="28">Base (28)</option>
+        <option value="29">Base (29)</option>
+        <option value="30">Base (30)</option>
+        <option value="31">Base (31)</option>
+        <option value="32">Base (32)</option>
+        <option value="33">Base (33)</option>
+        <option value="34">Base (34)</option>
+        <option value="35">Base (35)</option>
+        <option value="36">Base (36)</option>
+    </select>
+    <br><br>
+    <input type="text" name="val" id="i10" disabled>
+    <select name="unit" id="u10" onchange="convdn(4)">
+        <option value="10">Decimal (10)</option>
+    </select>
+    <br><br>
+    <script>
+        const chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        a = document.getElementById("u1").value * 1;
+        b = document.getElementById("u2").value * 1;
+        c = parseInt(document.getElementById("u1").value,a);
+        document.getElementById("i2").value = c.toString(b);
+    </script>
+    -->
+</body>
+</html>
