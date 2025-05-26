@@ -11,7 +11,7 @@ function convdn(i){
             b = document.getElementById("u2").value * 1;
             c = document.getElementById("i1").value / 1;
             switch(a){
-                case 0: cel();  break;  // Celcius
+                case 0: cel();  break;  // Celsius
                 case 1: fah();  break;  // Fahrenheit
                 case 2: kel();  break;  // Kelvin
                 case 3: rea();  break;  // Reaumur
@@ -81,36 +81,36 @@ function convup(i){     // Swapped Input <=> Output
 
 function cel(){
     switch(b){
-        case 0:     // Celcius to Celcius
+        case 0:     // Celsius to Celsius
             break;
-        case 1:     // Celcius to Fahrenheit
+        case 1:     // Celsius to Fahrenheit
             c = c * 9 / 5;
             c += 32;
             break;
-        case 2:     // Celcius to Kelvin
+        case 2:     // Celsius to Kelvin
             c += 273.15;
             break;
-        case 3:     // Celcius to Reaumur
+        case 3:     // Celsius to Reaumur
             c = c * 4 / 5;
             break;
-        case 4:     // Celcius to Kelvin to Fahrenheit
+        case 4:     // Celsius to Kelvin to Fahrenheit
             c += 273.15;
             c = c * 9 / 5;
             break;
-        default:    // Celcius to Celcius
+        default:    // Celsius to Celsius
             c += 0;
             break;
     }
 }
 function fah(){
     switch(b){
-        case 0:     // Fahrenheit to Celcius
+        case 0:     // Fahrenheit to Celsius
             c -= 32;
             c = c * 5 / 9;
             break;
         case 1:     // Fahrenheit to Fahrenheit
             break;
-        case 2:     // Fahrenheit to Celcius to Kelvin
+        case 2:     // Fahrenheit to Celsius to Kelvin
             c -= 32;
             c = c * 5 / 9;
             c += 273.15;
@@ -129,10 +129,10 @@ function fah(){
 }
 function kel(){
     switch(b){
-        case 0:     // Kelvin to Celcius
+        case 0:     // Kelvin to Celsius
             c -= 273.15;
             break;
-        case 1:     // Kelvin to Celcius to Fahrenheit
+        case 1:     // Kelvin to Celsius to Fahrenheit
             c -= 273.15;
             c = c * 9 / 5;
             c += 32;
@@ -140,28 +140,28 @@ function kel(){
         case 2:     // Kelvin to Kelvin
             c += 0;
             break;
-        case 3:     // Kelvin to Celcius to Reaumur
+        case 3:     // Kelvin to Celsius to Reaumur
             c -= 273.15;
             c = c * 4 / 5;
             break;
         case 4:     // Kelvin to Fahrenheit
             c = c * 9 / 5;
             break;
-        default:    // Kelvin to Celcius
+        default:    // Kelvin to Celsius
             c -= 273;
             break;
     }
 }
 function rea(){
     switch(b){
-        case 0:     // Reaumur to Celcius
+        case 0:     // Reaumur to Celsius
             c = c * 5 / 4;
             break;
         case 1:     // Reaumur to Fahrenheit
             c = c * 9 / 4;
             c += 32;
             break;
-        case 2:     // Reaumur to Celcius to Kelvin
+        case 2:     // Reaumur to Celsius to Kelvin
             c = c * 5 / 4;
             c += 273.15;
             break;
@@ -178,14 +178,14 @@ function rea(){
 }
 function ran(){
     switch(b){
-        case 0:     // Rankine to Celcius
+        case 0:     // Rankine to Celsius
             c = c * 5 / 9;
             c -= 273.15;
             break;
         case 1:     // Rankine to Fahrenheit
             c -= 459.67;
             break;
-        case 2:     // Rankine to Celcius
+        case 2:     // Rankine to Celsius
             c = c * 5 / 9;
             break;
         case 3:     // Rankine to Reaumur
